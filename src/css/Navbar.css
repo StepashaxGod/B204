@@ -1,0 +1,116 @@
+.navbar-container {
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.left-side {
+   width: 120px;
+}
+
+.left-side>img {
+   width: 100%;
+}
+
+.center-side {
+   display: flex;
+   gap: 10px;
+   font-size: 15px;
+}
+
+
+.right-side {
+   display: flex;
+   gap: 1.5rem;
+   cursor: pointer;
+   flex-wrap: nowrap;
+}
+
+.right-side img {
+   flex-shrink: 0;
+   max-height: 40px;
+}
+
+
+.img-magnifier {
+   width: 20px;
+}
+
+.img-profile {
+   width: 20px;
+}
+
+.img-cart {
+   width: 25px;
+}
+
+.cart-link {
+   position: relative;
+}
+
+.quantity-counter {
+   position: absolute;
+   top: 20px;
+   right: 5px;
+   transform: translate(50%, -50%);
+   font-size: 10px;
+   background-color: black;
+   border-radius: 50%;
+   color: white;
+   width: 16px;
+   height: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu-icon {
+   height: 1.1rem;
+   display: none;
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   right: -250px;
+   width: 250px;
+   height: 100vh;
+   transition: 0.3s ease;
+   padding: 20px;
+}
+
+.open-sidebar {
+   right: 0;
+}
+
+.close-sidebar {
+   margin-bottom: 20px;
+   padding: 20px;
+   align-self: flex-end;
+}
+
+.sidebar ul a {
+   display: block;
+   text-align: center;
+   padding: 10px;
+}
+
+.sidebar ul a:hover {
+   background-color: #f6f6f6;
+}
+
+
+@media (max-width: 762px) {
+   .center-side {
+      display: none;
+   }
+
+   .menu-icon {
+      display: block;
+   }
+}

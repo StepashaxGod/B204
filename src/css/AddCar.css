@@ -1,0 +1,41 @@
+.add-product {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.add-product input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-product button {
+  padding: 0.8rem;
+  background-color: #36da36;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.add-product button:hover {
+  background-color: #2ca52c;
+}
+
+@media (max-width: 480px) {
+  .add-product {
+    padding: 1rem;
+  }
+}

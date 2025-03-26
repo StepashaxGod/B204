@@ -1,0 +1,32 @@
+.cart-page {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart-item-details button {
+  padding: 0.5rem 1rem;
+  background: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cart-item-details button:hover {
+  background: #d32f2f;
+}

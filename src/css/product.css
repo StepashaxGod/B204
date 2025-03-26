@@ -1,0 +1,83 @@
+/* grid layout*/
+h2 {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.product-container {
+  display: flex;
+  height: 250px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.product-container:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.product-container:hover .product-name {
+  color: red;
+}
+
+.product-container:last-child {
+  border-bottom: none;
+}
+
+.product-description {
+  width: 1062px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-name {
+  margin-left: 20px;
+  font-size: larger;
+  font-weight: 600;  
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: larger;
+  color: rgb(41, 41, 41);
+}
+
+.right-description-side {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+.production-time {
+  font-size: larger;
+}
+
+.product-stats {
+  margin-left: 20px;
+}
+
+.product-additions {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.btn-add {
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: rgb(70, 209, 70);
+  color: white;
+  padding: 4px 10px;
+  margin-top: 10px;
+}
