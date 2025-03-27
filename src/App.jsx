@@ -8,6 +8,7 @@ import Cart from "./pages/Cart";
 import AddProduct from "./pages/AddProduct";
 import ProductDetail from "./pages/ProductDetail";
 import Checkout from "./pages/Checkout";
+import History from "./pages/History";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/add-product" element={<AddProduct />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/orders" element={<History />} />
       </Routes>
     </div>
   );

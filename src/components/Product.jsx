@@ -16,7 +16,6 @@ const Product = ({ product }) => {
               <div className="">{product.drive}</div>
               <div>{product.category}</div>
             </div>
-            <button className="btn-add">add to cart</button>
           </div>
           <div className="right-description-side">
             <div className="product-price">Price: {product.price}€</div>

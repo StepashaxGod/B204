@@ -1,0 +1,30 @@
+.checkout-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.dummy-pay-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0070ba;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dummy-pay-btn:hover {
+  background-color: #005a95;
+}

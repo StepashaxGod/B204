@@ -82,6 +82,10 @@ h2 {
   margin-top: 10px;
 }
 
+.btn-add:active  {
+  background-color: green;
+}
+
 @media (max-width: 762px) {
   .product-container {
     display: flex;
