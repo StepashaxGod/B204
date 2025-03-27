@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CarContext } from "../context/CarContext";
 import "../css/Cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useContext(CarContext);
@@ -31,6 +32,10 @@ const Cart = () => {
           <h3>Total Price: ${totalPrice}</h3>
         </>
       )}
+      <Link to="/checkout">
+        <button className="btn-pay">proceed to pay</button> 
+      </Link>
+      
     </section>
   );
 };

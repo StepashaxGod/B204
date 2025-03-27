@@ -30,3 +30,10 @@
 .cart-item-details button:hover {
   background: #d32f2f;
 }
+
+.btn-pay {
+  background-color: purple;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 10px;
+}

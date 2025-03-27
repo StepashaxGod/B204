@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { assets } from "../assets/assets";
 import "../css/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
+import { CarContext } from "../context/CarContext";
 
 export const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const { cartItems } = useContext(CarContext);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const totalQuantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <section className="navbar-container">
@@ -27,15 +31,16 @@ export const Navbar = () => {
           <p>ABOUT</p>
         </NavLink>
         <NavLink to="/add-product">
-          <p>Add a product</p>  
+          <p>Add a product</p>
         </NavLink>
-      
       </ul>
 
       <div className="right-side">
         <Link className="cart-link" to="/cart">
-          <img className="img-cart" src={assets.cartIcon} alt="" />
-          <p className="quantity-counter">{/* product.quantity*/}</p>
+          <img className="img-cart" src={assets.cartIcon} alt="cart icon" />
+          <p className="quantity-counter">
+            {totalQuantity > 0 ? totalQuantity : "0"}
+          </p>
         </Link>
         <img
           className="menu-icon"
@@ -45,7 +50,7 @@ export const Navbar = () => {
         />
       </div>
 
-      <div className={`sidebar ${isSidebarOpen ? "open-sidebar" : ""} `}>
+      <div className={`sidebar ${isSidebarOpen ? "open-sidebar" : ""}`}>
         <button className="close-sidebar" onClick={toggleSidebar}>
           ✖
         </button>
