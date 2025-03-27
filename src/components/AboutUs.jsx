@@ -14,7 +14,13 @@ const AboutUs = () => {
             Our team is the best on the market, we are offering exclusive car
             models, that u cant find on the regular markets.
           </p>
-          <p>We provide expert advice on the cars as well if u want to sell one go here - <NavLink to="/add-product"><p className="link-add">Add</p></NavLink></p>
+          <p>
+            We provide expert advice on the cars as well if u want to sell one
+            go here -{" "}
+            <NavLink to="/add-product">
+              <p className="link-add">Add</p>
+            </NavLink>
+          </p>
         </div>
       </div>
     </section>

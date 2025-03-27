@@ -33,9 +33,7 @@ export const Navbar = () => {
         <NavLink to="/add-product">
           <p>Add a product</p>
         </NavLink>
-        <NavLink to="/orders">
-            history
-          </NavLink>
+        <NavLink to="/orders">history</NavLink>
       </ul>
 
       <div className="right-side">
@@ -67,9 +65,7 @@ export const Navbar = () => {
           <NavLink to="/about" onClick={toggleSidebar}>
             ABOUT
           </NavLink>
-          <NavLink to="/orders">
-            history
-          </NavLink>
+          <NavLink to="/orders">history</NavLink>
         </ul>
       </div>
     </section>

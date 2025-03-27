@@ -1,6 +1,6 @@
 import React from "react";
 import { assets, cars } from "../assets/assets";
-import "../css/Product.css"
+import "../css/Product.css";
 
 const Product = ({ product }) => {
   return (
@@ -11,7 +11,7 @@ const Product = ({ product }) => {
         </div>
         <div className="product-description">
           <div>
-            <div className="product-name">{product.name}</div> 
+            <div className="product-name">{product.name}</div>
             <div className="product-additions">
               <div className="">{product.drive}</div>
               <div>{product.category}</div>
@@ -19,7 +19,7 @@ const Product = ({ product }) => {
           </div>
           <div className="right-description-side">
             <div className="product-price">Price: {product.price}€</div>
-            <div className="production-time">{product.productionYear }</div>
+            <div className="production-time">{product.productionYear}</div>
           </div>
         </div>
       </div>

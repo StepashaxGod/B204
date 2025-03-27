@@ -1,12 +1,12 @@
-import React from 'react'
-import CheckoutForm from '../components/CheckoutForm'
+import React from "react";
+import CheckoutForm from "../components/CheckoutForm";
 
 const Checkout = () => {
   return (
-     <>
-         <CheckoutForm />
-     </>
-   )
-}
+    <>
+      <CheckoutForm />
+    </>
+  );
+};
 
-export default Checkout
+export default Checkout;
